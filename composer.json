@@ -1,0 +1,52 @@
+{
+    "name": "josephdlmd/filament-storybook-ph",
+    "description": "Philippine accounting patterns for filament-storybook: VAT, withholding, TIN, BIR forms and reports, layered on the core patterns.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "ext-bcmath": "*",
+        "josephdlmd/filament-storybook": "dev-main"
+    },
+    "require-dev": {
+        "laravel/mcp": "^1.0",
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^5.0",
+        "pestphp/pest-plugin-laravel": "^5.0",
+        "spatie/laravel-pdf": "^2.14"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/josephdlmd/filament-storybook"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Josephdlmd\\FilamentStorybookPh\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Josephdlmd\\FilamentStorybookPh\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Josephdlmd\\FilamentStorybookPh\\FilamentStorybookPhServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
