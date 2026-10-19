@@ -11,7 +11,7 @@ class FilamentStorybookPhServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        // The stories, and the rules storybook-instructions gives agents after the core ones.
+        // The stories, and the rules storybook:instructions gives agents after the core ones.
         $this->app->extend(StoryRegistry::class, fn (StoryRegistry $registry): StoryRegistry => $registry
             ->discover(__DIR__.'/Stories', __NAMESPACE__.'\\Stories')
             ->addRules(__DIR__.'/../docs/rules.md'));
