@@ -4,7 +4,7 @@ Philippine accounting patterns for [filament-storybook](https://github.com/josep
 
 ```bash
 composer config repositories.filament-storybook-ph vcs https://github.com/josephdlmd/filament-storybook-ph
-composer require josephdlmd/filament-storybook-ph
+composer require josephdlmd/filament-storybook-ph:^0.1
 ```
 
 ## What it adds
