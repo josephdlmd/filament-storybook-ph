@@ -6,7 +6,7 @@
     "require": {
         "php": "^8.3",
         "ext-bcmath": "*",
-        "josephdlmd/filament-storybook": "dev-main"
+        "josephdlmd/filament-storybook": "^0.87.1"
     },
     "require-dev": {
         "laravel/mcp": "^1.0",
@@ -47,6 +47,6 @@
         },
         "sort-packages": true
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
